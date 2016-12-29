@@ -52,6 +52,12 @@
             </span>
             <span>Create a new playlist</span>
           </router-link>
+          <a href="http://playlister.seclab.co/play/dff62c8491a3c92f4316834a164f3208" class="button is-primary is-medium is-outlined">
+            <span class="icon">
+              <i class="fa fa-music" aria-hidden="true"></i>
+            </span>
+            <span>Example playlist</span>
+          </a>
         </p>
       </div>
     </div>
