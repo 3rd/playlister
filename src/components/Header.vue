@@ -23,7 +23,7 @@
               <span class="icon">
                 <i class="fa fa-github"></i>
               </span>
-              <span>Fork me</span>
+              <span>GitHub</span>
             </a>
           </span>
         </div>

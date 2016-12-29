@@ -23,7 +23,7 @@
               <span class="icon">
                 <i class="fa fa-github"></i>
               </span>
-              <span>Fork me</span>
+              <span>GitHub</span>
             </a>
           </span>
         </div>
@@ -43,7 +43,10 @@
           <i>Playlister</i> takes the songs you add and creates an online music player you can share with your friends.
         </p>
         <p>
-          Every part of <i>Playlister</i> is open-sourced, feel free to fork it and create pull requests on <a href="https://github.com/neculaesei/Playlister">GitHub</a>.
+          It allows you to remix existent playlists and it works nicely on both desktop and mobile devices.
+        </p>
+        <p>
+          Every part of <i>Playlister</i> is open-sourced, feel free to fork it and create issues or pull requests on <a href="https://github.com/neculaesei/Playlister">GitHub</a>.
         </p>
         <p class="cta">
           <router-link class="button is-primary is-medium is-outlined" to="/play/new">
