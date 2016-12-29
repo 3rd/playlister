@@ -21,10 +21,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   foreach ($input['videos'] as $inputVideo) {
     $video = array();
     $video['title'] = $inputVideo['title'];
-    $video['id'] = preg_replace("/[^[:alnum:][:space:]]/u", '', $inputVideo['id']);
+    $video['id'] = preg_replace("/[^[:alnum:][:space:]-_]/u", '', $inputVideo['id']);
     array_push($playlist['videos'], $video);
   }
-  $hash = md5(random_bytes(256) . $hash_salt);
+  $hash = md5(uniqid() . $hash_salt);
   $output = json_encode($playlist);
   $output_path = $data_dir . $hash . '.json';
   file_put_contents($output_path, $output);
