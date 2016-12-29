@@ -203,9 +203,7 @@ export default {
     },
     onPlayerReady (player) {
       this.player = player
-      player.pauseVideo()
       this.isPlaying = false
-      player.playVideo()
     },
     onPlayerPlaying () {
       this.isPlaying = true
