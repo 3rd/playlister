@@ -1,6 +1,12 @@
-# playlistr
+# Playlister
 
 > Simple web application for creating and sharing playlists.
+
+### Demo
+
+* Main site: [playlister.seclab.co](http://playlister.seclab.co)
+* Example playlist: [Programming playlist - VULFPECK](http://playlister.seclab.co/play/dff62c8491a3c92f4316834a164f3208)
+
 
 ## Build Setup
 
