@@ -19,7 +19,7 @@
             </p>
             <h3 class="subtitle">Can I help?</h3>
             <p>
-              Sure! Go ahead and fork the code on <a href="#">GitHub</a>. Pull requests are always welcome.
+              Sure! Go ahead and fork the code on <a href="https://github.com/neculaesei/Playlister">GitHub</a>. Pull requests are always welcome.
             </p>
             <h3 class="subtitle">Who are you?</h3>
             <p>

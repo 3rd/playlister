@@ -19,7 +19,7 @@
           <router-link class="nav-item" to="/play/new">Create new playlist</router-link>
           <router-link class="nav-item" to="/about">About the project</router-link>
           <span class="nav-item is-hidden-mobile">
-            <a class="button is-primary" href="#">
+            <a class="button is-primary" href="https://github.com/neculaesei/Playlister">
               <span class="icon">
                 <i class="fa fa-github"></i>
               </span>

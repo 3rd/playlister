@@ -19,7 +19,7 @@
           <router-link class="nav-item" to="/play/new">Create new playlist</router-link>
           <router-link class="nav-item" to="/about">About the project</router-link>
           <span class="nav-item is-hidden-mobile">
-            <a class="button is-primary" href="#">
+            <a class="button is-primary" href="https://github.com/neculaesei/Playlister">
               <span class="icon">
                 <i class="fa fa-github"></i>
               </span>
@@ -43,7 +43,7 @@
           <i>Playlister</i> takes the songs you add and creates an online music player you can share with your friends.
         </p>
         <p>
-          Every part of <i>Playlister</i> is open-sourced, feel free to fork it and create pull requests on <a href="#">GitHub</a>.
+          Every part of <i>Playlister</i> is open-sourced, feel free to fork it and create pull requests on <a href="https://github.com/neculaesei/Playlister">GitHub</a>.
         </p>
         <p class="cta">
           <router-link class="button is-primary is-medium is-outlined" to="/play/new">
