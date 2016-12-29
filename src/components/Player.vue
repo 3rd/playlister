@@ -111,7 +111,7 @@
         </div>
       </div>
       <div class="column right">
-        <ul>
+        <ul id="playlist">
           <li
             class="columns is-mobile"
             v-for="(video, index) in videos"
@@ -155,6 +155,7 @@ export default {
       isEditor: false,
       currentVideoIndex: 0,
       player: null,
+      sortable: null,
       isPlaying: false,
       isOnRepeat: false,
       playlistLoaded: false,
@@ -337,6 +338,9 @@ export default {
         if (playlistHash === 'remix') {
           this.isEditor = true
           this.playlistLoaded = true
+          if (this.sortable !== null) {
+            this.sortable.option('disabled', !this.isEditor)
+          }
         } else if (playlistHash === 'new') {
           this.playlistTitle = 'My new playlist'
           this.isEditor = true
@@ -346,6 +350,9 @@ export default {
             title: 'Rick Astley - Never Gonna Give You Up',
             id: 'dQw4w9WgXcQ'
           }]
+          if (this.sortable !== null) {
+            this.sortable.option('disabled', !this.isEditor)
+          }
         } else {
           this.isEditor = false
           this.loadPlaylist(playlistHash)
@@ -358,7 +365,24 @@ export default {
       this.parseRoute()
     }
   },
-  created () {
+  mounted () {
+    var self = this
+    this.$nextTick(() => {
+      self.sortable = window.Sortable.create(document.getElementById('playlist'), {
+        onEnd: (e) => {
+          var clonedItems = self.videos.filter((item) => {
+            return item
+          })
+          clonedItems.splice(e.newIndex || 0, 0, clonedItems.splice(e.oldIndex, 1)[0])
+          self.videos = []
+          self.$nextTick(() => {
+            self.videos = clonedItems
+            self.currentVideoIndex = e.newIndex || 0
+          })
+        }
+      })
+      self.sortable.option('disabled', !self.isEditor)
+    })
     this.parseRoute()
   }
 }
