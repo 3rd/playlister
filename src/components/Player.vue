@@ -110,7 +110,7 @@
           </div>
         </div>
       </div>
-      <div class="column right">
+      <div class="column is-half right">
         <ul id="playlist">
           <li
             class="columns is-mobile"
